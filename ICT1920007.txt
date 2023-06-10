@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#demo_1{
+	color:yellow;
+	font-size:40 px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+@keyframes slide-in {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0%); }
+    }
+.image-container{
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+    }
+.image-container img {
+      width: 100%;
+      height: auto;
+      animation: slide-in 2s ease-in-out infinite;
+    }
+h1{
+  text-align: center;
+  left: 100px;
+  top: 150px;
+  color:red;
+  text-decoration:underline;
+}
+.a{
+	text-align:right;
+	color:blue;
+	font-size:150%;
+}
+.b{
+	font-size:120%;
+}
+.c{
+	font-size:120%;
+	background-color:yellow;
+	color:blue;
+}
+.container {
+  position:relative;
+  text-align: center;
+  color: white;
+  text-decoration:bold;
+  font-size:120%;
+}
+.centered {
+  position:absolute;
+  top: -200px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+li {
+  list-style-type: none;
+  font-size: 16pt;
+}
+.mail {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 400px;
+  background: teal;
+  border: 1px soild silver;
+}
+.mail h2 {
+  margin-left: 38px;
+  color: white;
+}
+input {
+  font-size: 20pt;
+}
+
+input:focus,
+textarea:focus {
+  background-color: lightyellow;
+}
+input validate {
+  font-size: 12pt;
+}
+.rq {
+  color: #ff0000;
+  font-size: 10pt;
+}
+.error {
+  color: red;
+}
+.container1{
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+.hide-md-lg {
+  display: none;
+}
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .vl {
+    display: none;
+  }
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+a:hover {
+  background-color: yellow;
+  color:black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#attraction{
+	color:#E71D8E;
+	font-size:100%;
+}
+#myDIV {
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 270px;
+  height: 200px;
+  overflow: auto;
+}
+
+#myDIV:hover {
+  background-color: coral;
+  width: 570px;
+  height: 500px;
+  padding: 100px;
+  border-radius: 50px;
+}
+section {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+    }
+    
+    #section1 {
+      background-color: red;
+    }
+    
+    #section2 {
+      background-color: blue;
+    }
+    
+    #section3 {
+      background-color: green;
+    }
+#customanimation {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: #4B91DF ;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+</style>
+</head>
+<body style="background-color:#C39BD3">
+<h2>Today is:</h2>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display current Date/Time.</button>
+<p id="demo"></p>
+<button onclick="myFunction()">Importance:</button>
+<p id="demo_1"></p>
+<button onclick="myFunction_3()">Attraction</button>
+<p id="attraction"></p>
+<button onclick="myFunction_1()">Etomology</button>
+<br><br>
+<button onclick="myFunction_2()">Transport</button>
+<p id="transport"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function myFunction() {
+  document.getElementById("demo_1").innerHTML ="Hikkaduwa, a lively and buoyant town along the South West coast is home to Sri Lanka's one and only coral sanctuary, making the activity of diving and snorkelling popular which enthralls every visitor and it is Sri Lanka's second surfing hotspot.";
+}
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function ValidateEmail(input) {
+
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (input.value.match(validRegex)) {
+    alert("Valid email address!");
+    document.form1.text1.focus();
+    return true;
+
+  } else {
+    alert("Invalid email address!");
+    document.form1.text1.focus();
+    return false;
+  }
+}
+function validatePhoneNumber() {
+  var phoneNumber = document.getElementById("phone").value;
+  var regex = /^\d{10}$/;
+  if (regex.test(phoneNumber)) {
+    document.getElementById("result").innerHTML = "Phone number is valid.";
+    document.getElementById("result").classList.remove("error");
+  } else {
+    document.getElementById("result").innerHTML = "Phone number is not valid.";
+    document.getElementById("result").classList.add("error");
+  }
+}
+function myFunction_1() {
+  alert("The name Hikkaduwa is thought to have been derived from the two words Sip Kaduwa, with Sip (සිප්) being the shorter version of Shilpaya which refers to knowledge in Sinhala and Kaduwa(කඩුව) which means sword. It is believed therefore that the name Hikkaduwa means sword of knowledge. Alternatively, it means coral or seashell jungle.[2] In the sixties, many hippies came to live in Hikkaduwa which was nicknamed 'Hippiduwa'.");
+}
+function myFunction_2() {
+  var txt;
+  if (confirm("Hikkaduwa is located on the Coastal or Southern Rail Line (connecting Colombo through to Matara). It is also located on the A2 highway, connecting Colombo to Wellawaya, which runs mostly parallel to the shore, through the town.")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("transport").innerHTML = txt;
+}
+function myFunction_3() {
+  let person = prompt("Please enter your name", "nethmini");
+  if (person != null) {
+    document.getElementById("attraction").innerHTML =
+    "Hello " + person + "!\nHikkaduwa beach - reputed as the second-best surfing spot in Sri Lanka.<br>Hikkaduwa Coral Sanctuary - located a few hundred metres offshore. The sanctuary has approximately seventy varieties of multi-coloured corals. These coral gardens have been placed under protection.<br>The giant Buddha, Tsunami Honganji Vihara,[4] built in remembrance of those that died in the tragedy.<br>The Tsunami museum. ";
+  }
+}
+document.addEventListener('DOMContentLoaded', function() {
+      var sections = document.getElementsByTagName('section');
+      var activeSection = sections[0];
+      window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        for (var i = 0; i < sections.length; i++) {
+          var section = sections[i];
+          var top = section.offsetTop;
+          var bottom = top + section.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < bottom) {
+            activeSection.classList.remove('active');
+            section.classList.add('active');
+            activeSection = section;
+          }
+        }
+      });
+    });
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+<div class="image-container">
+<img src="C:\Users\HP\Downloads\images.jpg" alt="BEAUTY OF HIKKADUWA">
+</div>
+<h1>Hikkaduwa-beach</h1>
+<img src="C:\Users\HP\Downloads\FotoJet-cover-Hikkaduwa.webp" width="800px" height="500px" align="center-right">
+<iframe src="iframe.html" name="iframe_a" height="600px" width=“1000px" title="Iframe 
+Example"></iframe>
+<p class="a"><a href="https://en.wikipedia.org/wiki/Hikkaduwa-beach" target="iframe_a">About Hikkaduwa beach</a></p>
+<p ><h2 style="color:green"><b>Things to do at Hikkaduwa Beach</h2></b><br>
+<p class ="b">Hikkaduwa is famous for serving delicious seafood curries, relaxing massages, Buddhist temples, and watersports such as surfing, snorkeling, and diving. The beaches in Hikkaduwa may not be at par with Bali or Goa, but it does attract a fair amount of regulars.
+<ol>
+<li> Narigama Beach: Watch the Sunset</li>
+<li>Coral Reef Gardens: Explore the underwater world</li>
+<li>Splash Around at the Laguna</li>
+<li>Water sports: Lets have some fun</li>
+<li>Sunken ships of Hikkaduwa: Witness the shipwrecks</li></ol></p>
+<h3>Narigama Beach: Watch the Sunset</h3>
+<img src="C:\Users\HP\Downloads\Narigama-Beach.webp">
+<p class="c"><i>The Narigama Beach is the most popular beach in Hikkaduwa and sees the maximum influx of tourists.<br> The Narigama beach stretches on for about 4 kilometers and is a perfect surfing spot during the months from April to October.<br> The sea water is calmer during the winters. The beautiful hues splashed into the sky by the setting sun make the beach appear like a scene from a film or a photograph.<br> Thus, watching the sun dip behind the waters of the Narigama Beach is a treat for the eyes.</i></p>
+<h3>Coral Reef Gardens: Explore the underwater world</h3>
+<img src="C:\Users\HP\Downloads\Coral-Reef-Gardens.webp" height="600px" width="500px">
+<p class="c"><i>The colorful coral reefs are definitely worth a visit before climate change upsets the critical balance of nature. Sri Lankas vibrant coral reefs are home to a range of aquatic wildlife. They house a variety of fishes. Apart from the coral reefs, the sea turtles are yet another major attraction. You could feed these turtles by hand! The turtles often bury their eggs into the sands of the Hikkaduwa beach, and if you are lucky enough you can even watch new hatchlings make their way into the sea!</i></p>
+<h3>Water sports: Lets have some fun</h3>
+<img src="C:\Users\HP\Downloads\Water-sports3.webp" height="600px" width="500px">
+<p class="c"><i>The Hikkaduwa beach is suited for water sports such as snorkeling, swimming, surfing, scuba diving, body surfing, and boating. You could book a seat on a boat with a transparent bottom where you can closely observe shoals of fishes and other interesting aquatic creatures. If you wish to observe them more closely in the clear waters, you could sign up for one of the scuba diving or snorkeling courses at the PADI certified dive centers. The carefully planned and monitored trips will ensure that the environment stays unaffected by these activities.</i></p>
+<h3>Sunken ships of Hikkaduwa: Witness the shipwrecks</h3>
+<img src="C:\Users\HP\Downloads\ezgif.com-webp-to-jpg.webp">
+<p class="c"><i>If you are looking for a taste of adrenaline filled adventure, then Hikkaduwa can fulfill that wish too! Apart from the various species of fishes and sea turtles, the coast also contains sites for four different shipwrecks, which you can explore! Swim beneath the surface and who knows what hidden gem you can find!</i></p>
+<h2 style="color:red">How to reach Hikkaduwa??</h2>
+<img src="C:\Users\HP\Downloads\reach-Hikkaduwa.webp" height="600px" width="980px">
+<div class="container">
+<div class="centered">The city of Hikkaduwa is located about 100 kilometers to the south of Colombo.It is nearly 143 kilometers away from Galle.<br> It can be reached through the following modes:
+By Rail: Trains running from Colombo to Matara and go via Hikkaduwa. You can choose between different coaches offering varying levels of comfort. The train will make a pit stop at the Hikkaduwa railway station where you must get off.<br>
+By Bus: If you wish to travel via public transport, then you can board buses from Colombo heading towards Matara (including buses going to Galle and Tangale). These buses pass through Hikkaduwa. You may directly get off at the Narigama beach or the Hikkaduwa bus station. The bus ride takes about 3 hours.<br>
+By Road: Traveling to Hikkaduwa by taxi is by far the most expensive yet the most luxurious medium of travel. Apart from the taxis, the minibusses are also available to ferry larger groups of people to Hikkaduwa. You can board these taxis and minibusses at the Colombo Bandaranaike International Airport.</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="C:\Users\HP\Downloads\download (5).jpeg" style="width:80%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="C:\Users\HP\Downloads\download (2).jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\HP\Downloads\images.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<h3 style="color:black">Input an email address</h3>
+<form name="form1" action="#">
+        <ul>
+          <li><input type="text" name="text1" /></li>
+          <li>&nbsp;</li>
+          <li class="validate">
+            <input type="submit"
+              name="validate"
+              value="Validate"
+              onclick="ValidateEmail(document.form1.text1)"
+            />
+          </li>
+          <li>&nbsp;</li>
+        </ul>
+</form>
+<label for="phone"><h3 style="color:black">Input Phone Number:</label></h3>
+  <input type="text" id="phone" placeholder="Enter phone number">
+  <button onclick="validatePhoneNumber()">Validate</button>
+  <p id="result"></p>
+<h2>Login with Following social media apps</h2>
+<h2>Responsive Social Login Form</h2>
+<p>Resize the browser window to see the responsive effect. When the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<div class="container1">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+</div>
+<a href="https://en.wikipedia.org/wiki/Hikkaduwa">MORE DETAILS about Hikkaduwa-beach</a>
+<br><br>
+<div class="tooltip">Tourist destinations near by Hikkaduwa-beach
+  <span class="tooltiptext">
+Galle Fort
+Unawatuna
+Bentota
+Mirissa
+Yala National Park</span>
+</div>
+<br><br>
+<br><br>
+<button onclick="myFunction_4()">Hotels and resorts near Hikkaduwa beach</button>
+<div id="myDIV">
+  <h3>Riff Hikkaduwa.<br>Aditya.<br>Hikka Tranz by cinnamon.<br>Villa safforon Hikka.<br>Coral sands Hotel.<br>Lucky elephant Hotel.</h3>
+</div>
+<section id="section1">Section 1:Which season is best for Hikkaduwa?<br>The best time to visit is between January and March when the weather is most settled. The hottest month of the year is March with an average daily maximum of 33 C and an average low of 24 C. The coolest month of the year is September with an average daily maximum of 30 C and an average low of 25 C.</section>
+<a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <section id="section2">Section 2:Where is the beach of Hikkaduwa?<br>Hikkaduwa is a major tourist attraction in Sri Lanka and is known for its beaches and corals. It is located in the Southern Province, about 17 km (11 mi) north-west of Galle and 98 km (61 mi) south of Colombo.</section>
+<a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+<p><button onclick="myMove()">Click & watch under the sea</button></p> 
+
+<div id ="customanimation"><img src="C:\Users\HP\Downloads\images (1).jpeg">
+  <div id ="animate"><img src="C:\Users\HP\Downloads\download (6).jpeg"></div>
+</div>
+</body>
+</html>
